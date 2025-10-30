@@ -12,6 +12,7 @@ $displayProfile = htmlspecialchars($_SESSION['perfil']);
 <body>
 <h2>Dashboard</h2>
 <p>Bem-vindo, <?php echo $displayUser; ?> (perfil: <?php echo $displayProfile; ?>)</p>
+<p><a href="items.php">Gerenciar itens</a></p>
 <p><a href="logout.php">Sair</a></p>
 <?php if ($_SESSION['perfil'] === 'admin'): ?>
     <p><a href="admin_area.php">Área do Admin</a></p>
